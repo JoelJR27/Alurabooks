@@ -1,0 +1,62 @@
+hr {
+  margin: 0;
+  flex-direction: column;
+}
+
+.rodape {
+  padding: 1em;
+  background-color: var(--cor-primaria);
+}
+
+.rodape__titulo {
+  font-size: 1em;
+}
+
+.rodape__lista,
+.rodape__lista__titulo {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .rodape {
+    display: flex;
+    justify-content: space-around;
+    padding: 3em 1em;
+  }
+
+  .rodape__titulo {
+    font-size: 1.5rem;
+  }
+
+  .rodape__lista {
+    display: block;
+  }
+
+  .rodape__lista__titulo {
+    display: block;
+    color: var(--cinza);
+    margin: 1em;
+  }
+
+  .rodape__item {
+    display: flex;
+    align-items: center;
+    padding: 0.6em 0;
+  }
+
+  .rodape__item__link {
+    margin-left: 10px;
+    font-size: 14px;
+    color: var(--cinza-secundario);
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 1728px) {
+  .rodape__lista__educacao,
+  .rodape__educacao-online,
+  .rodape__comunidade {
+    border-left: 1px solid var(--cinza-secundario);
+    padding-left: 2em;
+  }
+}
